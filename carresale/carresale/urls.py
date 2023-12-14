@@ -16,13 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from carresale.views import home
+from carresale.views import add_car, home
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
+    path('add_car/', add_car, name='add_car'),
 ]
 
 if settings.DEBUG:

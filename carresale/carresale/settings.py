@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'compressor', 
-    'carresale'
+    'carresale',
+    'bootstrap5'
 ]
 
 MIDDLEWARE = [
